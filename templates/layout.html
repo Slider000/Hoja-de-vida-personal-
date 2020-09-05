@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Diseño y Desarrollo web">
+    <meta name="keywords" content="diseño web, desarrollo web, seo, posicionamiento web">
+    <title>&nbsp;Web Personal</title>
+
+    
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+     
+    <script src="../static/js/jquery-3.4.1.js"></script>
+    <script src="../static/js/modernizr.js" type="text/javascript"></script>
+    <script src="../static/js/script.js"></script>
+    
+
+
+    <link rel="stylesheet" href="../static/css/font-awesome.css">
+    <link rel="shortcut icon" href="../static/imgs/robot.ico">
+
+      
+
+    <!-- boostrap 5 -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <link href="../static/css/main.css" rel="stylesheet" media="all" />
+
+
+</head>
+
+<body>
+
+   
+     
+        <header>
+            
+            <nav>
+                <ul>
+                    <li class="actual"><a href="/"><span class="primero"><i class="icon fas fa-home"></i></span>Inicio</a></li>
+                    <li><a href="/contacto"><span class="segundo"><i class="icon far fa-comments"></i></span>Contacto</a>
+                        <ul>
+                            <li><a href=" https://api.whatsapp.com/send?phone=573014680579" &text="Bienvenid@ te estas comunicando con el ingeniero julian correa Gracias!"><span class="septimo"><i class="fab fa-whatsapp"></i></i></span>&nbsp;Whatshapp</a></li>
+                            <li><a href="https://www.facebook.com/julian.c.sierra.1"><span class="octavo"><i class="fab fa-facebook-f"></i></i></span>&nbsp;facebook</a></li>
+                            <li><a href="https://www.instagram.com/julianjcs14/?hl=es-la"><span class="noveno"><i class=" fab fa-instagram"></i></span>&nbsp;instagram</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li><a href="/informacion"><span class="tercero"><i class="icon far fa-folder-open"></i></span>Informacion</a></li>
+                    <li><a href="/perfil"><span class="cuarto"><i class="icon fas fa-user-secret"></i></span>Perfil</a></li>
+                    <li><a href="/ubicacion"><span class="quinto"><i class="icon fas fa-map-marker-alt"></i></span>Ubicacion</a></li>
+               
+               
+        
+                </ul>
+            </nav>
+        </header>
+
+      
+        
+        {% block content %}
+        {% endblock %}
+
+       
+      <div id="button-up">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+     
+
+        <footer>
+           
+            <p>Julian correa Desarrollador web, Copyright &copy; 2020</p>
+        </footer>
+       
+        
+        <script src="../static/js/buttun.js"></script>
+
+      
+
+</body>
+
+</html>

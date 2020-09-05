@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+
+<?php
+exec('index.py')
+?> 
+<section class="form_wrap">
+
+    <section class="contact_info">
+        <section class="info_title">
+            <span class="icon1 fab fa-jenkins" id="icon1"></span>
+            <h2 class="Letra1">Informacion<br>De Contacto</h2>
+        </section>
+        <secion class="info_items">
+            <p><span class="icon2 fa fa-envelope"></span>julian.correa.556@unisabaneta.edu.co</p>
+            <p><span class="icon3 fas fa-mobile-alt"></span>+(57)&nbsp301-468-05-79</p>
+        </secion>
+    </section>
+    <form action="enviar.php" method="post" class="form_contact">
+        <h2>Envia un mensaje</h2>
+        <div class="user_info">
+            <label for="names">Nombres *</label>
+            <input type="text" id="names" name="nombre" required>
+
+            <label for="phone">Telefono / Celular</label>
+            <input type="text" id="phone" name="telefono">
+
+            <label for="email">Correo electronico *</label>
+            <input type="text" id="email" name="correo" required>
+
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit" class="btn btn-secondary" value="Enviar Mensaje" id="btnSend">Enviar</button>
+       
+        </div>
+    </form>
+
+</section>
+
+
+
+{% endblock %}
